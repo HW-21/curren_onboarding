@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["cypress", "cypress-wait-until"],
+    "target": "ES2018",
+    "paths": {
+      "e2e/*": ["../cypress/*"]
+    }
+  },
+  "exclude": [
+    "../src/**/*.ts"
+  ],
+  "include": [
+    "../node_modules/cypress",
+    "./**/*.ts"
+  ]
+}
